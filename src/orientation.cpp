@@ -1,15 +1,13 @@
 #include <cmath>
-
 #include <ros/ros.h>
+
+#include <s8_orientation/orientation_node.h>
 
 #include <s8_common_node/Node.h>
 #include <sensor_msgs/Imu.h>
 #include <s8_msgs/Orientation.h>
 
-#define NODE_NAME           "s8_orientation_node"
-
-#define TOPIC_IMU           "/imu/data"
-#define TOPIC_ORIENTATION   "/s8/orientation"
+using namespace s8::orientation_node;
 
 class Orientation : public s8::Node {
     ros::Subscriber imu_subscriber;

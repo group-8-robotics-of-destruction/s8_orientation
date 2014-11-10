@@ -8,10 +8,11 @@ find_package(catkin REQUIRED COMPONENTS roscpp sensor_msgs s8_msgs s8_common_nod
 catkin_package(
   DEPENDS
   CATKIN_DEPENDS roscpp sensor_msgs s8_msgs s8_common_node
+  INCLUDE_DIRS include
 )
 
 include_directories(
-  # include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
